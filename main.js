@@ -27,7 +27,7 @@ formElement.addEventListener('submit', async (event) => {
 })
 
 async function getWeather(city) {
-    const weatherUrl = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`
+    const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`
     const response = await fetch(weatherUrl)
     const data = await response.json()
     return data
